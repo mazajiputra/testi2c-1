@@ -7,7 +7,7 @@ class multiplex:
     def __init__(self, bus):
         self.bus = smbus.SMBus(bus)
 
-    def channel(self, address=0x77,channel=4):  # values 0-3 indictae the channel, anything else (eg -1) turns off all channels
+    def channel(self, address=0x77,channel=1):  # values 0-3 indictae the channel, anything else (eg -1) turns off all channels
         
         if   (channel==0): action = 0x04
         elif (channel==1): action = 0x05

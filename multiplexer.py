@@ -8,7 +8,7 @@ import time
 import sys
 
 I2C_address = 0x77
-I2C_bus_number = 4
+I2C_bus_number = 1
 I2C_ch_0 = 0b00000001
 I2C_ch_1 = 0b00000010
 I2C_ch_2 = 0b00000100

@@ -8,7 +8,8 @@ class multiplex:
         self.bus = smbus.SMBus(bus)
 
     def channel(self, address,channel):  # values 0-7 indictae the channel, anything else (eg -1) turns off all channels
-        
+        #dipake 02,04,05,07
+        #tidak dipake 00,01,03,04,06
         if   (channel==0): action = 0x01
         elif (channel==1): action = 0x02
         elif (channel==2): action = 0x04
