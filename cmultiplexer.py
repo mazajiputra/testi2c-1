@@ -24,10 +24,10 @@ class multiplex:
 if __name__ == '__main__':
     
     bus=1       # 0 for rev1 boards etc.
-    address=0x70
+    address=0x77
     
     plexer = multiplex(bus)
-    pilih=0
+    pilih=5
     plexer.channel(address,pilih)
     print("channel yg dipilih ",pilih)
     print("Now run i2cdetect")
