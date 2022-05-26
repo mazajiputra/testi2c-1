@@ -28,7 +28,7 @@ if __name__ == '__main__':
     address=0x77
     
     plexer = multiplex(bus)
-    pilih=5
+    pilih=2
     plexer.channel(address,pilih)
     print("channel yg dipilih ",pilih)
     print("Now run i2cdetect")
